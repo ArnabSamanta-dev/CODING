@@ -1,0 +1,19 @@
+#include<iostream>
+#include <string>
+using namespace std;
+
+int main () {
+
+int a, b, temp;
+ cout << " enter the first number :" ;
+ cin >> a ;
+ cout << " enter the second number :";
+cin >> b ;
+temp = a ;
+a = b ;
+b = temp ;
+cout << "a:" << a << "b :" << b << endl ;
+return 0;
+
+
+}

@@ -1,16 +1,27 @@
-#include<iostream>
+#include <iostream>
 #include <string>
-using namespace std; 
+using namespace std;
 
-int main () {
-    int a,b ,c,sum = 0;
-     double  avg = 0;
-    cout << " enter a number: ";
-    cin >> a >> b >> c ;
-    
-    sum = a+b+c ;
-    avg = (double) sum/3.0;
-    cout << " the avg of three  num is " << avg << endl;
+class bank {
+public:
+    string name;
+    int amount;
+
+    void display() {
+        cout << " the " << name << " has " << amount << " in this sector " << endl;
+    }
+};
+
+int main() {
+    bank b1;
+    b1.name = "sbi";
+    b1.amount = 1000;
+    b1.display();
+
+    bank b2;
+    b2.name = "hdfc";
+    b2.amount = 2000;
+    b2.display();
+
     return 0;
-
-}
+} 
